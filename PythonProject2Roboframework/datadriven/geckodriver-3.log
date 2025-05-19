@@ -1,0 +1,11 @@
+1747380269985	geckodriver	INFO	Listening on 127.0.0.1:64697
+1747380272259	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64698" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileJEXiio"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747380332954	Marionette	INFO	Marionette enabled
+1747380334825	Marionette	INFO	Listening on port 64705
+WebDriver BiDi listening on ws://127.0.0.1:64698
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

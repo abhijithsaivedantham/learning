@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-17T15:03:32.001707" rpa="false" schemaversion="5">
+<suite id="s1" name="EndToEndXYZ" source="C:\Users\hp\PycharmProjects\PythonProject2Roboframework\Selenium\EndToEndXYZ.robot">
+<test id="s1-t1" name="Invoke Chrome browser" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:03:47.241446" level="INFO">Opening browser 'chrome' to base url 'https://globalsqa.com/angularJs-protractor/BankingProject/#/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-17T15:03:47.240718" elapsed="87.626948"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:25.234934" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:14.868518" elapsed="10.366825"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-17T15:05:25.236731" elapsed="0.725563"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Browser is opened</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-17T15:05:25.963426" elapsed="0.000983"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:28.966169" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:25.965391" elapsed="3.000952"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:28.967629" level="INFO">Clicking element 'xpath://button[normalize-space()='Customer Login']'.</msg>
+<arg>xpath://button[normalize-space()='Customer Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:28.966938" elapsed="0.464213"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:31.432685" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:29.431796" elapsed="2.001058"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//select[@id='userSelect']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-17T15:05:31.433359" elapsed="0.114692"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:31.549198" level="INFO">Selecting options from selection list 'xpath=//select[@id='userSelect']' by value 2.</msg>
+<arg>xpath=//select[@id='userSelect']</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-05-17T15:05:31.548684" elapsed="0.230876"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:34.782396" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:31.781304" elapsed="3.001373"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:34.784847" level="INFO">Clicking element 'xpath://button[normalize-space()='Login']'.</msg>
+<arg>xpath://button[normalize-space()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:34.784322" elapsed="0.231934"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:38.022415" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:35.020323" elapsed="3.002456"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:38.024145" level="INFO">Clicking element 'xpath://button[normalize-space()='Deposit']'.</msg>
+<arg>xpath://button[normalize-space()='Deposit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:38.023579" elapsed="0.513884"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:41.539086" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:38.538108" elapsed="3.001223"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@placeholder='amount']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-17T15:05:41.540183" elapsed="0.049329"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:41.590974" level="INFO">Typing text '1000' into text field 'xpath=//input[@placeholder='amount']'.</msg>
+<arg>xpath=//input[@placeholder='amount']</arg>
+<arg>1000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:41.590291" elapsed="0.783262"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:42.375225" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:42.374480" elapsed="0.212965"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://span[@class='error ng-binding']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-17T15:05:42.588417" elapsed="0.048815"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:45.638698" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:42.637909" elapsed="3.001004"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:45.640456" level="INFO">Clicking element 'xpath://button[normalize-space()='Transactions']'.</msg>
+<arg>xpath://button[normalize-space()='Transactions']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:45.639738" elapsed="0.215236"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:48.856054" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:45.855460" elapsed="3.000891"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@id='start']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-17T15:05:48.857277" elapsed="0.043038"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:51.901997" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:48.900791" elapsed="3.001385"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:51.903335" level="INFO">Clicking element 'xpath://button[normalize-space()='Back']'.</msg>
+<arg>xpath://button[normalize-space()='Back']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:51.902786" elapsed="0.236549"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:54.140665" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:52.140092" elapsed="2.000733"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:54.142182" level="INFO">Clicking element 'xpath://button[normalize-space()='Withdrawl']'.</msg>
+<arg>xpath://button[normalize-space()='Withdrawl']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:54.141718" elapsed="0.131979"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@placeholder='amount']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-17T15:05:54.274921" elapsed="0.461883"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:54.738079" level="INFO">Typing text '1000' into text field 'xpath=//input[@placeholder='amount']'.</msg>
+<arg>xpath=//input[@placeholder='amount']</arg>
+<arg>1000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:54.737531" elapsed="0.178139"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:54.919201" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:54.918376" elapsed="0.183720"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://span[@class='error ng-binding']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-17T15:05:55.104248" elapsed="0.045794"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:05:58.151672" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:55.150811" elapsed="3.001061"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:05:58.152883" level="INFO">Clicking element 'xpath://button[normalize-space()='Transactions']'.</msg>
+<arg>xpath://button[normalize-space()='Transactions']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:05:58.152417" elapsed="0.149086"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:06:01.303816" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:05:58.302701" elapsed="3.002349"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@id='start']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-17T15:06:01.306907" elapsed="0.035941"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:06:04.344989" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:06:01.344423" elapsed="3.000739"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-17T15:06:04.346018" level="INFO">Clicking element 'xpath://button[normalize-space()='Back']'.</msg>
+<arg>xpath://button[normalize-space()='Back']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-17T15:06:04.345677" elapsed="0.125714"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-17T15:06:07.473440" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-17T15:06:04.472512" elapsed="3.001266"/>
+</kw>
+<status status="PASS" start="2025-05-17T15:03:47.237665" elapsed="140.237255"/>
+</test>
+<status status="PASS" start="2025-05-17T15:03:32.006335" elapsed="155.477282"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="EndToEndXYZ" id="s1" pass="1" fail="0" skip="0">EndToEndXYZ</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

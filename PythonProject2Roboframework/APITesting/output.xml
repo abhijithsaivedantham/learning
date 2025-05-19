@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-17T14:02:34.869544" rpa="false" schemaversion="5">
+<suite id="s1" name="PUTvideogame" source="C:\Users\hp\PycharmProjects\PythonProject2Roboframework\APITesting\PUTvideogame.robot">
+<test id="s1-t1" name="Putrequest" line="15">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-17T14:02:35.957239" level="INFO">Creating Session using : alias=mysession, url=https://videogamedb.uk:443/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${base_URL}</arg>
+<arg>verify=True</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-17T14:02:35.956747" elapsed="0.000905"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-17T14:02:35.959751" level="INFO">&amp;{headers} = { x-api-key=reqres-free-v1 }</msg>
+<var>&amp;{headers}</var>
+<arg>x-api-key=${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-17T14:02:35.958984" elapsed="0.000851"/>
+</kw>
+<kw name="PUT On Session" owner="RequestsLibrary">
+<msg time="2025-05-17T14:02:36.237222" level="INFO">PUT Request : url=https://videogamedb.uk:443/api/v2/videogame/1 
+ path_url=/api/v2/videogame/1 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-api-key': 'reqres-free-v1', 'Content-Length': '111', 'Content-Type': 'application/json'} 
+ body=b'{"category": "Platform", "name": "Mario", "rating": "Mature", "releaseDate": "2012-05-04", "reviewScore": "85"}' 
+ </msg>
+<msg time="2025-05-17T14:02:36.237605" level="INFO">PUT Response : url=https://videogamedb.uk:443/api/v2/videogame/1 
+ status=200, reason= 
+ headers={'vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'pragma': 'no-cache', 'expires': '0', 'x-frame-options': 'DENY', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'date': 'Sat, 17 May 2025 08:32:36 GMT', 'server': 'Fly/f5a9cf807 (2025-05-08)', 'via': '1.1 fly.io, 1.1 fly.io', 'fly-request-id': '01JVENZA63XA2QVCGGMPSEHZNN-bom', 'content-encoding': 'gzip'} 
+ body={"id":1,"name":"Mario","releaseDate":"2012-05-04","reviewScore":85,"category":"Platform","rating":"Mature"} 
+ </msg>
+<msg time="2025-05-17T14:02:36.237905" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>${Servicename}</arg>
+<arg>json=&amp;{sample_body}</arg>
+<arg>headers=&amp;{headers}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-17T14:02:35.960346" elapsed="0.277621"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-17T14:02:36.239397" level="INFO">{'id': 1, 'name': 'Mario', 'releaseDate': '2012-05-04', 'reviewScore': 85, 'category': 'Platform', 'rating': 'Mature'}</msg>
+<arg>${Response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-17T14:02:36.238458" elapsed="0.001044"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-17T14:02:36.240666" level="INFO">200</msg>
+<arg>${Response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-17T14:02:36.239936" elapsed="0.000831"/>
+</kw>
+<status status="PASS" start="2025-05-17T14:02:35.955337" elapsed="0.285845"/>
+</test>
+<status status="PASS" start="2025-05-17T14:02:34.874092" elapsed="1.368375"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="PUTvideogame" id="s1" pass="1" fail="0" skip="0">PUTvideogame</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
