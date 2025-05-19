@@ -1,0 +1,25 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+
+<employees>
+
+    <employee>
+
+        <eid>101</eid>
+
+        <ename>abhijith</ename>
+
+        <salary>40000</salary>
+
+    </employee>
+
+    <employee>
+
+        <eid>102</eid>
+
+        <ename>sai</ename>
+
+        <salary>30000</salary>
+
+    </employee>
+
+</employees>
